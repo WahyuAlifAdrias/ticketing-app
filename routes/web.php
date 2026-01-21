@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\HistoriesController;
 use App\Http\Controllers\User\HomeController;
 use App\Http\Controllers\User\OrderController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\PaymentTypeController;
+
 
 // jangan lupa import controller
 
@@ -41,6 +43,9 @@ Route::middleware('auth')->group(function () {
 
         // Tiket Management 
         Route::resource('tickets', TiketController::class);
+
+        // Payment Type Management
+        Route::resource('payment-types', PaymentTypeController::class);
 
         // Histories
         Route::get('/histories', [HistoriesController::class, 'index'])->name('histories.index');
