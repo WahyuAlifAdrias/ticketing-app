@@ -86,13 +86,15 @@ Jika ada seeder:
 php artisan db:seed
 ```
 
-buat seeder
+buat seeder:
+```bash
 php artisan make:seeder PaymentTypeSeeder
-
+```
 
 refresh
+```bash
 php artisan migrate:fresh --seed
-
+```
 
 ---
 
