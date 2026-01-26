@@ -86,6 +86,14 @@ Jika ada seeder:
 php artisan db:seed
 ```
 
+buat seeder
+```php artisan make:seeder PaymentTypeSeeder
+```
+
+refresh
+```php artisan migrate:fresh --seed
+```
+
 ---
 
 ## ▶️ Menjalankan Aplikasi
