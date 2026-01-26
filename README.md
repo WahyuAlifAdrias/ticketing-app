@@ -87,12 +87,12 @@ php artisan db:seed
 ```
 
 buat seeder
-```php artisan make:seeder PaymentTypeSeeder
-```
+php artisan make:seeder PaymentTypeSeeder
+
 
 refresh
-```php artisan migrate:fresh --seed
-```
+php artisan migrate:fresh --seed
+
 
 ---
 
